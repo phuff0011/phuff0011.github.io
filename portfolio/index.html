@@ -1,0 +1,87 @@
+<!DOCTYPE html>
+<!--
+	Name: Landon Huff
+	File name: index.html
+	Date: 02/14/2024
+-->
+<html lang="en">
+<head>
+	<title>Home | Landon Huff</title>
+	<meta charset="utf-8">
+	<link rel="stylesheet" href="css/styles.css">
+	<meta name="viewport" content="width=device-width, initial-scale=1">
+	<meta name="description" content="Landon Huff is able to provide both information technology and web design services.">
+	<link rel="preconnect" href="https://fonts.googleapis.com">
+	<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+	<link href="https://fonts.googleapis.com/css2?family=Inconsolata:wght@200..900&family=Karla:ital,wght@0,200..800;1,200..800&display=swap" rel="stylesheet">
+</head>
+
+<body>
+	<!-- Mobile nav -->
+	<nav class="mobile-nav">
+		<div id="menu-links">
+			<a href="index.html">Home</a>
+			<a href="about.html">About</a>
+			<a href="it.html">IT</a>
+			<a href="design.html">Web Design</a>
+			<a href="connect.html">Connect</a>
+		</div>
+		<a class="menu-icon" onclick="hamburger()">
+			<div>&#9776;</div>
+		</a>
+	</nav>
+	
+	<header id="headshot">
+		<figure>
+			<img src="images/landon-huff.jpg" alt="Headshot of Landon Huff">
+			<h1 class="tab-desk">Landon Huff</h1>
+			<figcaption class="tab-desk"><h2>IT & Web Design Specialist</h2></figcaption>
+		</figure>
+	</header>
+	
+	<nav class="tab-desk">
+		<ul>
+			<li><a href="index.html">Home</a></li>
+			<li><a href="about.html">About</a></li>
+			<li><a href="it.html">IT</a></li>
+			<li><a href="design.html">Web Design</a></li>
+			<li><a href="connect.html">Connect</a></li>
+		</ul>
+	</nav>
+	
+	<!-- The main area is used for each page's specific content. -->
+	
+	<div id="container">
+		<main>
+			<p>Hi there! My name is <span class="text-shadow">Landon Huff</span>, and I specialize in both IT and web design. Feel free to explore my website to learn about my experience in both fields. &#9786;</p>
+			
+			<div id="home-audio">
+				<audio controls>
+					<source src="media/DayNigthMorning-RealLife.mp3" type="audio/mp3">
+					<source src="media/DayNigthMorning-RealLife.ogg" type="audio/ogg">
+					<p>Your browser does not support the audio element.</p>
+				</audio>
+			</div>
+			
+			<div class="home-grid">
+				<figure class="frame">
+					<img src="images/information-technology.png" alt="Picture of a computer motherboard">
+					<figcaption class="pic-text"><a href="it.html">Information Technology</a></figcaption>
+				</figure>
+				
+				<figure class="frame">
+					<img src="images/web-design.png" alt="Picutre of a laptop sitting on a desk">
+					<figcaption class="pic-text"><a href="design.html">Web Design</a></figcaption>
+				</figure>
+			</div>
+		</main>
+	</div>
+	
+	<footer>
+		<p><a href="mailto:phuff0011@kctcs.edu">phuff0011@kctcs.edu</a></p>
+		<a href="https://www.linkedin.com" target="_blank"><img src="images/linkedin-logo.png" alt="LinkedIn logo"></a>
+	</footer>
+	
+	<script src="scripts/script.js"></script>
+</body>
+</html>

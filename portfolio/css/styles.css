@@ -1,0 +1,536 @@
+/*
+#32213A - dark purple
+#383B53 - space cadet
+#66717E - Payne's gray
+#D4D6B9 - pearl
+#D1CAA1 - sage
+*/
+
+body, header, nav, main, footer, div, img, ul, dl, dt, dd, figure, figcaption, caption, table {
+	margin: 0;
+	padding: 0;
+	border: 0;
+}
+
+* {
+	box-sizing: border-box;
+}
+
+body {
+	background-color: #32213A;
+}
+
+
+img {
+	display: block;
+	max-width: 100%;
+}
+
+html, body {
+    width: 100%;
+    height: 100%;
+    margin: 0px;
+    padding: 0px;
+    overflow-x: hidden; 
+}
+
+/* Style rules for mobile viewport */
+
+/* Hide tab-desk class, show mobile class */
+.tab-desk, #menu-links {
+	display: none;
+}
+
+.mobile {
+	display: block;
+}
+
+/* Style rules for header */
+header {
+	top: 0;
+	background-color: #32213A;
+	height: 160px;
+}
+	
+header img {
+	border-radius: 50%;
+	margin: 0 auto;
+	width: 150px;
+}
+
+header, nav, footer {
+	background-color: #32213A;
+}
+
+header h1, header h2 {
+	color: #D4D6B9;
+	float: right;
+	width: 78%;
+	font-family: "Karla", sans-serif;
+}
+
+header h1 {
+	font-size: 4em;
+}
+
+header h2 {
+	font-size: 3em;
+	margin-top: -1.2%;
+}
+
+/* Style rules for nav */
+.mobile-nav {
+	position: relative;
+}
+
+.mobile-nav a {
+	color: #D4D6B9;
+	font-family: 'Karla', sans-serif;
+	text-align: center;
+	font-size: 1.75em;
+	text-decoration: none;
+	display: block;
+	padding: 2.4%;
+}
+	
+.mobile-nav a.menu-icon {
+	position: absolute;
+	display: block;
+	left: 0;
+	top: 0;
+}
+
+nav {
+	padding: 1.2%;
+	margin-bottom: 1.2%;
+}
+
+/* Style rules for page content */
+#container {
+	background-color: #fff;
+	width: 100%;
+	padding: 2.4%;
+	font-size: 1.45em;
+}
+
+main {
+	width: 75%;
+	margin: 0 auto;
+	font-family: "Inconsolata", monospace;
+}
+
+#home-audio audio {
+	margin: 0 auto;
+	display: table;
+}
+
+.home-grid figure {
+	padding-top: 8.8%;
+}
+
+#experience dt {
+	font-size: 1.25em;
+	color: #383B53;
+	text-align: center;
+	font-weight: bold;
+	padding: 4% 2.4%;
+}
+
+#schools ul {
+	text-align: center;
+	padding-top: 1.2%;
+}
+
+#schools li {
+	display: inline-block;
+}
+
+#schools ul li {
+	list-style-type: none;
+	padding: 1.2% 4%;
+}
+
+#schools li a {
+	display: block;
+	text-decoration: none;
+	color: #66717E;
+	text-align: center;
+	font-weight: bold;
+	font-size: 1.25em;
+}
+
+.frame {
+	position: relative;
+	max-width: 450px;
+	margin: 2% auto;
+}
+
+.pic-text {
+	position: absolute;
+	bottom: 0;
+	background: rgba(0,0,0,0.75);
+	color: #fff;
+	width: 100%;
+	padding: 20px;
+	text-align: center;
+	font-family: "Inconsolata", monospace;
+	font-size: 1em;
+	font-weight: bold;
+}
+
+.pic-text a {
+	color: #fff;
+	text-decoration: none;
+}
+
+#contact {		
+	text-align: left;
+}
+
+a, .external {
+	font-weight: bold;
+	color: #383B53;
+	text-decoration: none;
+}
+
+.email-link, .tel-link {
+	font-weight: bold;
+	color: #D4D6B9;
+	text-decoration: none;
+	background-color: #32213A;
+	padding: 2%;
+}
+
+#contact-buttons {
+	text-align: center;
+}
+
+#contact-links {
+	display: none;
+}
+
+.full-width {
+	margin: 0 -25%;
+}
+
+.map {
+	border: 4px solid #383B53;
+	width: 100%;
+	height: 50%;
+}
+
+#certs-list {
+	display: block;
+}
+
+#certs-table {
+	display: none;
+}
+
+/* Style rules for form */
+fieldset, input, select, textarea {
+	margin-bottom: 2%;
+}
+
+fieldset legend {
+	font-weight: bold;
+	text-align: center;
+}
+
+label {
+	display: block;
+	padding-top: 3%;
+}
+
+form {
+	text-align: center;
+}
+
+
+form #questions {
+	padding-top: 8%;
+	font-weight: bold;
+}
+
+textarea#questions {
+	margin-top: 8%;
+}
+
+form #submit {
+	margin: 0 auto;
+	border: none;
+	display: block;
+	padding: 2%;
+	background-color: #D4D6B9;
+	font-size: 1em;
+	border-radius: 10px;
+}
+
+form input, form textarea {
+	border: 1px solid black;
+}
+
+/* Style rules for footer */
+footer {
+	display: flex;
+	justify-content: center;
+	align-items: center;
+	gap: 40px;
+	padding: 40px 0;
+	margin: 0 auto;
+	font-weight: bold;
+	font-size: 1.25em;
+	font-family: "Karla", sans-serif;
+}
+
+footer a {
+	text-decoration: none;
+	color: #D4D6B9;
+}
+
+/* Media query for tablet viewport */
+@media screen and (min-width: 768px) {
+	#contact-buttons {
+		display: none;
+	}
+	
+	#contact-links {
+		display: block;
+	}
+}
+
+@media screen and (min-width: 833px) {
+	.mobile, .mobile-nav {
+		display: none;
+	}
+	
+	.tab-desk {
+		display: block;
+	}
+	
+	.desktop-only {
+		display: none;
+	}
+
+	/* Tablet Viewport: Style rules for header */
+	header {
+		position: static;
+		height: fit-content;
+	}
+
+	header img {
+		width: 200px;
+	}
+	
+	header h1, header h2 {
+		float: none;
+		text-align: center;
+		width: 100%;
+	}
+	
+	header h1 {
+		font-size: 2.25em;
+	}
+	
+	header h2 {
+		font-size: 1.75em;
+	}
+
+	/* Tablet Viewport: Style rules for nav */
+	nav ul {
+		list-style-type: none;
+		text-align: center;
+	}
+	
+	nav li a {
+		display: block;
+		text-decoration: none;
+		text-align: center;
+		padding: 0.25em 1.2em;
+		color: #D4D6B9;
+	}
+	
+	nav li {
+		font-size: 1.75em;
+		font-family: "Karla", sans-serif;
+		display: inline-block;
+		border-right: 4px dashed #D4D6B9;
+		border-top: none;
+	}
+	
+	nav li:last-child {
+		border-right: none;
+	}
+
+	/* Tablet Viewport: Style rules for main content */	
+	dl ul {
+		padding-top: 2.4%;
+	}
+	
+	dl ul li {
+		margin-left: 8%;
+	}
+	
+	.map {
+		height: 350px;
+	}
+	
+	/* Tablet Viewport: Style rules for form */
+	label#questions {
+		padding-top: 4%;
+	}
+	
+	textarea#questions {
+		margin-top: 4%;
+		padding: 2.4% 1.2%;
+		width: 50%;
+		height: 400px;
+	}
+	
+	/* Tablet Viewport: Style rules for footer */
+	footer {
+		width: 50%;
+	}
+}
+
+/* Media query for desktop viewport */
+@media screen and (min-width:1080px) {
+	.desktop-only {
+		display: block;
+	}
+	
+	#certs-list {
+		display: none;
+	}
+	
+	/* Desktop Viewport: Style rules for header */
+	header img {
+		float: left;
+		padding: 1.4%;
+		width: 275px;
+	}
+
+	header h1, header h2 {
+		text-align: left;
+		width: 78%;
+		padding-left: 300px;
+	}
+
+	header h1 {
+		font-size: 3em;
+		padding-top: 1.6%
+	}
+
+	header h2 {
+		font-size: 2.25em
+	}
+
+	/* Desktop Viewport: Style rules for nav */
+	nav {
+		clear: left;
+	}
+
+	nav li {
+		border-right: none;
+	}
+	
+	nav li a:hover {
+		background-color: #D4D6B9;
+		color: #32213A;
+		transform: translateY(-10px);
+	}
+	
+	/* Desktop Viewport: Style rules for main content */
+	main {
+		width: 50%;
+	}
+	
+	#home-audio audio {
+		margin-top: 4%;
+	}
+	
+	.pic-text a {
+		font-size: 28px;
+	}
+	
+	.pic-text:hover {
+		opacity: 1;
+		box-shadow: 10px 10px 5px #D1CAA1;
+	}
+	
+	.grid {
+		display: grid;
+		grid-template-columns: auto auto auto;
+		grid-gap: 20px;
+		width: 100%;
+	}
+	
+	.home-grid {
+		display: flex;
+		justify-content: space-around;
+		margin: 0 calc(50% - 30vw);
+	}
+	
+	.home-grid figure {
+		padding-top: 4%;
+	}
+	
+	.full-span {
+		grid-column: 1 / span 3;
+		margin: 0 auto;
+	}
+	
+	.map {
+		height: 500px;
+	}
+	
+	.full-width {
+		margin-left: calc(50% - 45vw);
+		margin-right: calc(50% - 45vw);
+	}
+	
+	#certs-table {
+		display: block;
+	}
+	
+	#certs-list {
+		display: none;
+	}
+
+	table {
+		border: 1px black solid;
+		border-collapse: collapse;
+	}
+	
+	tr th {
+		font-size: 1.15em;
+		line-height: 2em;
+	}
+	
+	tr td {
+		padding: 2.4% 1.2%;
+	}
+	
+	tr td:nth-child(odd) {
+		padding-left: 2.4%;
+	}
+	
+	tr:nth-child(odd) {
+		background-color: #A3B5CA;
+	}
+	
+	caption {
+		padding: 2.4%;
+		font-size: 1.4em;
+	}
+	
+	/* Desktop Viewport: Style rules for form */
+	form #fName, form #lName, form #email, form #tel-num {
+		width: 50%;
+	}
+	
+	/* Desktop Viewport: Style rules for footer */
+	footer {
+		gap: 60px;
+	}
+}
