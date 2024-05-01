@@ -529,6 +529,10 @@ footer a {
 		width: 50%;
 	}
 	
+	form .btn:hover {
+		cursor: pointer;
+	}
+	
 	/* Desktop Viewport: Style rules for footer */
 	footer {
 		gap: 60px;
